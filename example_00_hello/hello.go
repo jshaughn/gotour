@@ -1,8 +1,13 @@
 package main
 
-import "fmt"
+import (
+    "fmt"
+	"github.com/jshaughn/gotour/stringutil"
+)
 
 func main() {
-    fmt.Printf("hello, world\n")
+    const hw = "hello, world"
+    fmt.Printf("%s\n", hw)
+    fmt.Printf("REVERSE=%s\n", stringutil.Reverse(hw))
 }
 
